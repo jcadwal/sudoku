@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="ui.js" defer></script>        
+</head>
+<body>
+    <div class="modal" id="modal">
+        <div class="modal-content" id="modal-content">
+            <h1>Save current puzzle</h1>
+            <label for="modal-title-box">Puzzle title:</label>
+            <input type="text" id="modal-title-box">
+            <button id="modal-save-button">Save</button>
+            <h1>Load a puzzle from local storage</h1>
+            <select id="modal-dropdown"></select>
+            <button id="modal-load-button">Load</button>
+        </div>
+        
+    </div>
+
+
+
+    <div class="app">
+        <div class="board" id="board">
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+        <div class="control-panel" id="control-panel">
+            <div class="edit-mode" id="edit-mode">
+                <h1>Edit Mode</h1>
+                <label for="btn-solve">Enter solve mode</label>
+                <button id="btn-solve" class="btn">Solve</button>
+                <br>
+                <label for="btn-clear">Clear puzzle</label>
+                <button id="btn-clear" class="btn">Clear puzzle</button>
+                <div class="availables" id="availables">
+                    <h2>Available for selected cell:</h2>
+                    <span id="availables-span"></span>
+                </div>
+                <h1>Load and save puzzle</h1>                
+                <button id="btn-save" class="btn">Save</button>
+                <button id="btn-load" class="btn">Load</button>
+            </div>
+            <div class="solve-mode" id="solve-mode">
+                <h1>Solve Mode</h1>
+                <button id="btn-edit" class="btn">Enter edit mode</button>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    
+</body>
+</html>
